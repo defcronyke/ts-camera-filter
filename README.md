@@ -8,15 +8,6 @@ You can run the webapp online here: [https://defcronyke.github.io/ts-camera-filt
 ```bash
 git clone https://github.com/defcronyke/ts-camera-filter.git
 cd ts-camera-filter
-npm run build
-npm i -g serve
-serve -s build
-```
-
-To run the unoptimized development version of the webapp locally offline, use these commands instead:
-```bash
-git clone https://github.com/defcronyke/ts-camera-filter.git
-cd ts-camera-filter
 npm start
 ```
 
