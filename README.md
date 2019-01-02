@@ -8,8 +8,25 @@ You can run the webapp online here: [https://defcronyke.github.io/ts-camera-filt
 ```bash
 git clone https://github.com/defcronyke/ts-camera-filter.git
 cd ts-camera-filter
+npm i
+```
+
+Alternately, if you don't want to use git, you can just download the latest version of this project here: [https://github.com/defcronyke/ts-camera-filter/archive/master.zip](https://github.com/defcronyke/ts-camera-filter/archive/master.zip)
+
+Unzip that file somewhere, and now there will be a new folder there called ts-camera-filter-master. Run the following commands to start the local offline version of this zip distribution:
+```bash
+cd ts-camera-filter-master
+npm i
+```
+
+You can then run the offline version of the webapp whenever you want by running this command while in the project's directory:
+```bash
 npm start
 ```
+
+Your web browser will probably open a new tab now which is running the app offline, but if it doesn't, you can manually browse to: [http://localhost:3000](http://localhost:3000)
+
+For your convenience, your webapp is also made available to your Local Area Network (LAN), so you can access it from other computers on your network by browsing to: [http://<your-computer-ip>:3000](http://<your-computer-ip>:3000)  (make sure to replace <your-computer-ip> with the IP address of the computer that is running the npm start command)
 
 ----------
 
