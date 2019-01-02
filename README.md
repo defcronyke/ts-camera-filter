@@ -2,7 +2,7 @@
 
 This is the latest audio-reactive camera filter project by the band [Telephone Sound](https://telephonesound.com).
 
-Run this web app on a device with a screen, webcam, and microphone, and it will allow you to visualize your environment through the sounds or music in the room around you.
+Run this web app on a device with a screen, webcam, and microphone, and it will allow you to visualize your environment through the sounds or music in the area around you.
 
 ## Online
 
@@ -10,12 +10,16 @@ You can run the web app online here: [https://defcronyke.github.io/ts-camera-fil
 
 ## Offline
 
-Or you can run it locally offline or share it over your LAN, by first installing Node.js through your package manager, or from here: [https://nodejs.org](https://nodejs.org), and then running the following commands to initialize the project:
+### Install With Git
+
+You can run the web app locally offline or share it over your LAN, by first installing Node.js through your package manager, or from here: [https://nodejs.org](https://nodejs.org), and then running the following commands to initialize the project:
 ```bash
 git clone https://github.com/defcronyke/ts-camera-filter.git
 cd ts-camera-filter
 npm i
 ```
+
+### Install From The ZIP Distribution
 
 Alternately, if you don't want to use git, you can just download the latest version of this project here: [https://github.com/defcronyke/ts-camera-filter/archive/master.zip](https://github.com/defcronyke/ts-camera-filter/archive/master.zip)
 
@@ -25,16 +29,20 @@ cd ts-camera-filter-master
 npm i
 ```
 
-The npm i command will take a few minutes, because it's downloading and installing everything that's needed to run the webapp. When it's done, you can run the offline version of the webapp whenever you want by running this command from inside the project's directory:
+### Run The Web App
+
+The npm i command will take a few minutes, because it's downloading and installing everything that's needed to run the web app. Once it's done, you can run the offline version of the webapp whenever you want by running this command from inside the project's directory:
 ```bash
 npm start
 ```
 
-Your web browser will probably open a new tab now which is running the app offline, but if it doesn't, you can manually browse to: [http://localhost:3000](http://localhost:3000)
+Your web browser will probably open a new tab now which is running the web app offline, but if it doesn't, you can manually browse to: [http://localhost:3000](http://localhost:3000)
 
-For your convenience, the webapp is also made available to your Local Area Network (LAN), so you can access it from other computers on your network by browsing to: [http://\<your-computer-ip\>:3000](http://<your-computer-ip>:3000)  (make sure to replace \<your-computer-ip\> with the IP address of the computer that is running the npm start command)
+### Run Over Local Area Network
 
-## Updating
+For your convenience, the web app is also made available to your Local Area Network (LAN), so you can access it from other computers on your network by browsing to: [http://\<your-computer-ip\>:3000](http://<your-computer-ip>:3000)  (make sure to replace \<your-computer-ip\> with the IP address of the computer that is running the npm start command)
+
+### Updating
 
 To update to the latest version of this project, if you originally cloned it with git, just run these commands from inside the project directory:
 ```bash
