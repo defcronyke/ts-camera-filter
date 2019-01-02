@@ -8,18 +8,23 @@ Run this web app on a device with a screen, webcam, and microphone, and it will 
 
 You can run the web app online here: [https://defcronyke.github.io/ts-camera-filter](https://defcronyke.github.io/ts-camera-filter)
 
+Once it finishes loading on your device from the above URL, the web app will run completely offline and will not send any webcam or microphone data over the internet.
+
 ## Offline
+
+You can also run the web app locally offline or share it over your LAN, by first installing Node.js through your package manager or from here: [https://nodejs.org](https://nodejs.org),
+and then installing the web app using either git or the zip distribution.
 
 ### Install With Git
 
-You can run the web app locally offline or share it over your LAN, by first installing Node.js through your package manager, or from here: [https://nodejs.org](https://nodejs.org), and then running the following commands to initialize the project:
+To install the web app using git, run the following commands:
 ```bash
 git clone https://github.com/defcronyke/ts-camera-filter.git
 cd ts-camera-filter
 npm i
 ```
 
-### Install From The ZIP Distribution
+### Install With The ZIP Distribution
 
 Alternately, if you don't want to use git, you can just download the latest version of this project here: [https://github.com/defcronyke/ts-camera-filter/archive/master.zip](https://github.com/defcronyke/ts-camera-filter/archive/master.zip)
 
