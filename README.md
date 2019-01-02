@@ -28,9 +28,10 @@ Your web browser will probably open a new tab now which is running the app offli
 
 For your convenience, the webapp is also made available to your Local Area Network (LAN), so you can access it from other computers on your network by browsing to: [http://\<your-computer-ip\>:3000](http://<your-computer-ip>:3000)  (make sure to replace \<your-computer-ip\> with the IP address of the computer that is running the npm start command)
 
-To update to the latest version of this project, if you originally cloned it with git, just do:
+To update to the latest version of this project, if you originally cloned it with git, just run these commands from inside the project directory:
 ```bash
 git pull
+npm i
 ```
 
 If you downloaded the zip distribution, simply download again from the link above at any time, and you will receive the latest version.
