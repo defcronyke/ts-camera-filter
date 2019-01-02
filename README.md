@@ -4,13 +4,23 @@ This is the latest audio-reactive camera filter project by the band [Telephone S
 
 Run this webapp on a device with a webcam and microphone, and it will allow you to visualize your environment through the sounds or music in the room around you.
 
-You can run the webapp [online here](https://defcronyke.github.io/ts-camera-filter), or you can clone this repository and run the webapp locally offline, by first [installing Node.js from here](https://nodejs.org), and then running the following commands:
+You can run the webapp online here: [https://defcronyke.github.io/ts-camera-filter](https://defcronyke.github.io/ts-camera-filter), or you can clone this repository and run the webapp locally offline, by first installing Node.js from here: [https://nodejs.org](https://nodejs.org), and then running the following commands:
 ```bash
 git clone https://github.com/defcronyke/ts-camera-filter.git
 cd ts-camera-filter
-npm install
+npm run build
+npm i -g serve
+serve -s build
+```
+
+To run the unoptimized development version of the webapp locally offline, use these commands instead:
+```bash
+git clone https://github.com/defcronyke/ts-camera-filter.git
+cd ts-camera-filter
 npm start
 ```
+
+----------
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
