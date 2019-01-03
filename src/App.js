@@ -46,42 +46,34 @@ class App extends Component {
     this.audioDataQueue = [];
     this.audioFreqQueue = [];
     this.audioFreqSlice = [];
+    this.fullscreen = false;
 
     this.flipVideoHorizontally = this.flipVideoHorizontally.bind(this);
 
     this.SceneUtils = {
 
       createMultiMaterialObject: (geometry, materials) => {
-
-        var group = new THREE.Group();
+        const group = new THREE.Group();
 
         for (var i = 0, l = materials.length; i < l; i++) {
-
           group.add(new THREE.Mesh(geometry, materials[i]));
-
         }
 
         return group;
-
       },
 
       detach: (child, parent, scene) => {
-
         child.applyMatrix(parent.matrixWorld);
         parent.remove(child);
         scene.add(child);
-
       },
 
       attach: (child, scene, parent) => {
-
         child.applyMatrix(new THREE.Matrix4().getInverse(parent.matrixWorld));
 
         scene.remove(child);
         parent.add(child);
-
       }
-
     };
 
     if (!window.requestAnimationFrame) {
@@ -115,8 +107,18 @@ class App extends Component {
       this.setState(() => ({
         showClickToStart: false
       }), () => {
+        if (!this.fullscreen) {
+          document.documentElement.requestFullscreen();
+        }
+
         this.video.play();
       });
+    });
+
+    document.addEventListener('keypress', (e) => {
+      if (e.keyCode === 13 && this.fullscreen) {
+        document.exitFullscreen();
+      }
     });
 
     this.shaders = await App.loadShaders("shaders/filter1.vsh", "shaders/filter1.fsh");
