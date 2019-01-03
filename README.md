@@ -59,6 +59,10 @@ If you downloaded the zip distribution, simply download again from the link abov
 
 ----------
 
+### Part of [https://eternalvoid.net](The Eternal Void Network)
+
+----------
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
