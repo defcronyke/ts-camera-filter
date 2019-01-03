@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/ts-camera-filter/precache-manifest.2199de0ae7b41fd7ef1d86701ecd2f0b.js"
+  "/ts-camera-filter/precache-manifest.7012470c130f71d7841aab0d0602a6b0.js"
 );
 
 workbox.clientsClaim();
