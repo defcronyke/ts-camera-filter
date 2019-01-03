@@ -59,7 +59,7 @@ If you downloaded the zip distribution, simply download again from the link abov
 
 ----------
 
-Part of [The Eternal Void Network](https://eternalvoid.net)
+### Part of [The Eternal Void Network](https://eternalvoid.net)
 
 ----------
 
